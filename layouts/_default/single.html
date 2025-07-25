@@ -2,7 +2,7 @@
   <h1>{{ .Title }}</h1>
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   {{ .Content }}
-  {{ partial "date.html" .Date}}
+  <!-- {{ partial "date.html" .Date}} -->
 
   {{ if not .IsHome }}
     <div class="terminal-nav">
@@ -11,4 +11,6 @@
       </div>
     </div>
   {{ end }}
+  <!-- <p>Last updated on {{ .Lastmod.Format "2006-01-02" }}</p> -->
+  <p style="font-size: 0.8em; color: #bbb; font-weight: 400;">Page last updated on {{ .Lastmod.Format "01-02-2006" }}</p>
 {{ end }}

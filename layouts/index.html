@@ -3,4 +3,6 @@
   <div class="terminal-nav">
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
   </div>
+
+  <p style="font-size: 0.8em; color: #bbb; font-weight: 400;">Site last updated on {{ .Site.Lastmod.Format "01-02-2006" }}</p>
 {{ end }}
