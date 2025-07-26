@@ -1,8 +1,39 @@
 {{ define "main" }}
+
+  <p>
+    Reader, programmer, mildly NYTimes-obsessed policy nerd. 
+    <a href="https://lapalabradeldia.com/ciencia/">Spanish Science Wordle</a> enthusiast.
+  </p>
+
+  <p>
+    Computer science, robotics, and math @ MIT
+  </p>
+
+  <p>
+    → Email: megant at mit dot edu <br>
+    → LinkedIn: megan dash tian <br>
+    → GitHub: megan dash tian
+  </p>
+
+  <div style="float: right">
+    <p>
+      ╱|、<br>
+      (˚ˎ 。7  <br>
+       |、˜〵     <br>     
+      じしˍ,)ノ<br>
+    </p>
+  </div>
+
+
+  <!-- <p><a href="https://www.linkedin.com/in/megan-tian/">LinkedIn</a></p>
+  <p><a href="https://github.com/megan-tian">GitHub</a></p> -->
+
   {{ .Content }}
   <div class="terminal-nav">
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
   </div>
+
+
 
   <p style="font-size: 0.8em; color: #838383; font-weight: 400;">Site last updated on {{ .Site.Lastmod.Format "01-02-2006" }}</p>
 {{ end }}
